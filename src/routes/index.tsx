@@ -98,9 +98,6 @@ function HomePage() {
                 View Portfolio
                 <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition" />
               </a>
-              <a href="#resume" className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-medium hover:bg-secondary transition">
-                View Resume
-              </a>
             </div>
 
             <div className="mt-12 grid grid-cols-3 gap-6 max-w-md">
