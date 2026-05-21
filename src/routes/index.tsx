@@ -32,7 +32,6 @@ export const Route = createFileRoute("/")({
   component: HomePage,
 });
 
-const RESUME = "/shamshad-ali-resume.pdf";
 
 const services = ["Logo Design", "Social Media Design", "Web Design", "Print Media Design"];
 
