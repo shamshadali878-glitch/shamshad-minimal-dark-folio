@@ -2,10 +2,10 @@ import { Outlet } from "@tanstack/react-router";
 import { MessageCircle } from "lucide-react";
 
 const navItems = [
+const navItems = [
   { href: "#home", label: "Home" },
   { href: "#about", label: "About" },
   { href: "#portfolio", label: "Portfolio" },
-  { href: "#resume", label: "Resume" },
 ] as const;
 
 export function SiteLayout() {
