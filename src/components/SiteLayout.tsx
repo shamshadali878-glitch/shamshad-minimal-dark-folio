@@ -1,11 +1,11 @@
-import { Link, Outlet } from "@tanstack/react-router";
+import { Outlet } from "@tanstack/react-router";
 import { MessageCircle } from "lucide-react";
 
 const navItems = [
-  { to: "/", label: "Home" },
-  { to: "/about", label: "About" },
-  { to: "/portfolio", label: "Portfolio" },
-  { to: "/resume", label: "Resume" },
+  { href: "#home", label: "Home" },
+  { href: "#about", label: "About" },
+  { href: "#portfolio", label: "Portfolio" },
+  { href: "#resume", label: "Resume" },
 ] as const;
 
 export function SiteLayout() {
@@ -13,20 +13,18 @@ export function SiteLayout() {
     <div className="min-h-screen flex flex-col">
       <header className="sticky top-0 z-40 backdrop-blur-md bg-background/70 border-b border-border">
         <div className="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
-          <Link to="/" className="font-display text-xl tracking-tight">
+          <a href="#home" className="font-display text-xl tracking-tight font-semibold">
             Shamshad<span className="text-primary">.</span>
-          </Link>
+          </a>
           <nav className="flex gap-1 sm:gap-2 text-sm">
             {navItems.map((item) => (
-              <Link
-                key={item.to}
-                to={item.to}
+              <a
+                key={item.href}
+                href={item.href}
                 className="px-3 py-2 rounded-md text-muted-foreground hover:text-foreground transition-colors"
-                activeOptions={{ exact: true }}
-                activeProps={{ className: "px-3 py-2 rounded-md text-primary" }}
               >
                 {item.label}
-              </Link>
+              </a>
             ))}
           </nav>
         </div>

@@ -24,8 +24,8 @@
   --color-border: var(--border);
   --color-ring: var(--ring);
   --font-display: "Instrument Serif", serif;
+  --font-display: "Inter", system-ui, sans-serif;
   --font-sans: "Inter", system-ui, sans-serif;
-}
 
 :root {
   --radius: 0.5rem;
@@ -46,13 +46,7 @@
   --ring: oklch(0.82 0.12 85);
 }
 
-@font-face {
-  font-family: "Instrument Serif";
-  src: url("https://fonts.gstatic.com/s/instrumentserif/v4/jizDREVItHgc8qDIbSTKq4XKVqUKylA.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
+/* sans-serif only */
 
 @layer base {
   * { border-color: var(--color-border); }
