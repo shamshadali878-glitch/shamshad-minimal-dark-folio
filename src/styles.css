@@ -23,9 +23,10 @@
   --color-accent-foreground: var(--accent-foreground);
   --color-border: var(--border);
   --color-ring: var(--ring);
-  --font-display: "Instrument Serif", serif;
   --font-display: "Inter", system-ui, sans-serif;
   --font-sans: "Inter", system-ui, sans-serif;
+}
+
 
 :root {
   --radius: 0.5rem;
