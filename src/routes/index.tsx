@@ -100,7 +100,7 @@ function HomePage() {
             </div>
 
             <div className="mt-12 grid grid-cols-3 gap-6 max-w-md">
-              <Stat n="6+" label="Years" />
+              <Stat n="5+" label="Years" />
               <Stat n="9" label="Companies" />
               <Stat n="50+" label="Projects" />
             </div>
