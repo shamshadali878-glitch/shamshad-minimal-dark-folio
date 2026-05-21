@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { ArrowUpRight, Download, ExternalLink } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import portrait from "@/assets/portrait.jpg";
 import aboutHero from "@/assets/about-hero.jpg";
 import logo1 from "@/assets/logos/logo_1.jpg";
@@ -32,7 +32,6 @@ export const Route = createFileRoute("/")({
   component: HomePage,
 });
 
-const RESUME = "/shamshad-ali-resume.pdf";
 
 const services = ["Logo Design", "Social Media Design", "Web Design", "Print Media Design"];
 
@@ -97,9 +96,6 @@ function HomePage() {
               <a href="#portfolio" className="group inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-6 py-3 text-sm font-medium hover:opacity-90 transition">
                 View Portfolio
                 <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition" />
-              </a>
-              <a href="#resume" className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-medium hover:bg-secondary transition">
-                View Resume
               </a>
             </div>
 
@@ -240,32 +236,6 @@ function HomePage() {
         </Subsection>
       </section>
 
-      {/* RESUME */}
-      <section id="resume" className="scroll-mt-20 max-w-5xl mx-auto px-6 py-20">
-        <header className="flex flex-wrap items-end justify-between gap-6 mb-10">
-          <div>
-            <p className="text-sm uppercase tracking-[0.3em] text-primary mb-4">Resume</p>
-            <h2 className="font-display text-5xl sm:text-6xl font-semibold tracking-tight">Shamshad Ali</h2>
-            <p className="text-muted-foreground mt-3">Graphic Designer · Rawalpindi, Pakistan</p>
-          </div>
-          <div className="flex gap-3">
-            <a href={RESUME} download className="inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-5 py-2.5 text-sm font-medium hover:opacity-90 transition">
-              <Download className="w-4 h-4" /> Download
-            </a>
-            <a href={RESUME} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full border border-border px-5 py-2.5 text-sm font-medium hover:bg-secondary transition">
-              <ExternalLink className="w-4 h-4" /> Open
-            </a>
-          </div>
-        </header>
-
-        <div className="rounded-2xl overflow-hidden border border-border bg-card">
-          <iframe
-            src={RESUME}
-            title="Shamshad Ali Resume"
-            className="w-full h-[80vh] min-h-[600px] bg-card"
-          />
-        </div>
-      </section>
     </div>
   );
 }
