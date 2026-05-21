@@ -259,9 +259,11 @@ function HomePage() {
         </header>
 
         <div className="rounded-2xl overflow-hidden border border-border bg-card">
-          <object data={RESUME} type="application/pdf" className="w-full h-[80vh] min-h-[600px]">
-            <iframe src={RESUME} title="Shamshad Ali Resume" className="w-full h-[80vh] min-h-[600px]" />
-          </object>
+          <iframe
+            src={RESUME}
+            title="Shamshad Ali Resume"
+            className="w-full h-[80vh] min-h-[600px] bg-card"
+          />
         </div>
       </section>
     </div>
