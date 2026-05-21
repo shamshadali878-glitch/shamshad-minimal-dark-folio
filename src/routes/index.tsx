@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { ArrowUpRight, Download, ExternalLink } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import portrait from "@/assets/portrait.jpg";
 import aboutHero from "@/assets/about-hero.jpg";
 import logo1 from "@/assets/logos/logo_1.jpg";
