@@ -86,7 +86,7 @@ function HomePage() {
             <h1 className="font-display text-6xl sm:text-7xl md:text-8xl leading-[0.95] font-semibold tracking-tight">
               Shamshad
               <br />
-              <span className="text-primary">Ali </span>
+              <span className="text-primary">Ali</span>
             </h1>
             <p className="mt-6 text-lg text-muted-foreground max-w-xl">
               Graphic Designer — crafting impactful visuals for print and digital. Branding, social media designs and creative identity systems.
