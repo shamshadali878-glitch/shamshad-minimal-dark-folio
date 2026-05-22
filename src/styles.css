@@ -2,9 +2,9 @@
 
 @import "tailwindcss";
 @import "tw-animate-css";
-
-
-
+/* =========================
+   THEME VARIABLES
+========================= */
 :root {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -26,22 +26,24 @@
   --color-border: var(--border);
   --color-ring: var(--ring);
 
-  /* Clash Display Font */
+  /* Fonts */
   --font-display: "Clash Display", sans-serif;
   --font-sans: "Clash Display", sans-serif;
 }
 
+/* =========================
+   ROOT THEME
+========================= */
 :root {
   --radius: 0.5rem;
 
-  /* Aesthetic dark theme */
   --background: oklch(0.14 0.005 270);
   --foreground: oklch(0.96 0.005 270);
 
   --card: oklch(0.18 0.006 270);
   --card-foreground: oklch(0.96 0.005 270);
 
-  --primary: oklch(0.82 0.12 85); /* warm gold */
+  --primary: oklch(0.82 0.12 85);
   --primary-foreground: oklch(0.14 0.005 270);
 
   --secondary: oklch(0.22 0.006 270);
@@ -57,22 +59,32 @@
   --ring: oklch(0.82 0.12 85);
 }
 
+/* =========================
+   BASE STYLES
+========================= */
 @layer base {
   * {
     border-color: var(--color-border);
   }
 
-  html,
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
     font-family: var(--font-display);
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   h1,
   h2,
-  h3 {
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: var(--font-display);
     letter-spacing: -0.02em;
   }
