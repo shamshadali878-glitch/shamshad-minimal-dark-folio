@@ -40,9 +40,9 @@ const tools = [
   { name: "Adobe Photoshop", level: 95 },
   { name: "Figma", level: 85 },
   { name: "Canva", level: 80 },
-  { name: "CorelDraw", level: 95 },
+  { name: "Adobe InDesign", level: 75 },
   { name: "Adobe Premiere Pro", level: 60 },
-  { name: "Capcut", level: 70 },
+  { name: "Google Workspace", level: 70 },
 ];
 
 const experience = [
