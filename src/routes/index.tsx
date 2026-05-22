@@ -84,7 +84,7 @@ function HomePage() {
           <div>
             <p className="text-sm uppercase tracking-[0.3em] text-muted-foreground mb-6">Hi, I'm</p>
             <h1 className="font-display text-6xl sm:text-7xl md:text-8xl leading-[0.95] font-semibold tracking-tight">
-              وَاللَّهُ خَيْرُ الرَّازِقِين
+              Shamshad
               <br />
               <span className="text-primary">Ali </span>
             </h1>
