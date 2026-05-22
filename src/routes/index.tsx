@@ -40,9 +40,9 @@ const tools = [
   { name: "Adobe Photoshop", level: 95 },
   { name: "Figma", level: 85 },
   { name: "Canva", level: 80 },
-  { name: "Adobe InDesign", level: 75 },
+  { name: "CorelDraw", level: 95 },
   { name: "Adobe Premiere Pro", level: 60 },
-  { name: "Google Workspace", level: 70 },
+  { name: "Capcut", level: 70 },
 ];
 
 const experience = [
@@ -84,7 +84,7 @@ function HomePage() {
           <div>
             <p className="text-sm uppercase tracking-[0.3em] text-muted-foreground mb-6">Hi, I'm</p>
             <h1 className="font-display text-6xl sm:text-7xl md:text-8xl leading-[0.95] font-semibold tracking-tight">
-              Shamshad
+              وَاللَّهُ خَيْرُ الرَّازِقِين
               <br />
               <span className="text-primary">Ali </span>
             </h1>
